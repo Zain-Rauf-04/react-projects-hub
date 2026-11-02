@@ -1,0 +1,110 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1.25rem;
+    gap: 1.5rem;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+    border-radius: 1rem;
+    border: 1px solid #e2e8f0cc;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.search:hover {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
+    transform: scale(1.001);
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    gap: 1rem;
+}
+.input input {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    background-color: #F8FAFC;
+    padding: 0.65rem 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: all 0.5s ease-in-out;
+}
+.input input:focus {
+    border: 1px solid #6366f1;
+    outline: none;
+    box-shadow: 0 2px 5px 2px #e0e7ff;
+}
+.input i {
+    position: absolute;
+    flex-shrink: 0;
+    z-index: 1;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.input i:nth-of-type(1) {
+    left: 2.1rem;
+}
+.input i:nth-last-child(1) {
+    right: 12rem;
+}
+.input small {
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0.5rem 0.75rem;
+    background-color: #F8FAFC;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    line-height: 1.45rem;
+}
+.input span {
+    margin-left: 0.5rem;
+    color: #fff;
+    padding: 0.125rem 0.5rem;
+    background-color: #4f46e5;
+    border-radius: 999px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.input span:hover {
+    background-color: #4f46e5;
+}
+.filter small {
+    color: #94a3b8;
+    margin: 0 0.25rem 0 0.5rem;
+    letter-spacing: -0.5px;
+}
+.filter button {
+    color: #475569;
+    background-color: #f1f5f9;
+    padding: 0.45rem 0.8rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 0.75rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+@media (max-width: 560px) {
+    .filter button {
+        margin-bottom: 0.75rem;
+    }
+}
+.filter button.active-filter {
+    background-color: #1e293b;
+    color: #fff;
+}
+.filter button:hover {
+    background-color: #dce0e4;
+}
